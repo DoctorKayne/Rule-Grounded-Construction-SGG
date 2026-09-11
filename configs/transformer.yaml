@@ -1,0 +1,9 @@
+extends: paper_default.yaml
+
+model:
+  backbone: transformer
+  hidden_dim: 128
+  num_layers: 3
+  num_heads: 4
+  ffn_dim: 512
+  dropout: 0.3

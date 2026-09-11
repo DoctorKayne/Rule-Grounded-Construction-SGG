@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rule-grounded-construction-sgg"
+version = "0.2.0"
+description = "Reference implementation of rule-grounded construction safety relation learning."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch==2.7.0",
+  "PyYAML>=6,<7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
